@@ -1,5 +1,7 @@
 FROM golang:1.16-alpine as builder
 
+ENV GO111MODULE=on
+
 WORKDIR /tmp/golang-image
 COPY . .
 
